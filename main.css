@@ -1,0 +1,41 @@
+html {
+  font-family: 'regularp', 'Bangla648', 'sans-serif' !important;
+}
+
+body {
+  background: #d7e8ff;
+}
+
+.header-img {
+  max-height: 500px;
+}
+
+.header-logo span {
+  vertical-align: middle;
+}
+
+.header-text {
+  background: #dbeafe;
+  padding: 1.3rem;
+  border-radius: 10px;
+}
+
+.fw-bold {
+  font-weight: 500 !important;
+}
+
+.custom-btn {
+  background: #1f2937;
+  color: white;
+  border-radius: 10px;
+}
+
+.custom-btn:hover {
+  background: rgba(63, 125, 224, 0.5);
+  color: #1a73e8;
+}
+
+.rounded {
+  border-radius: 1.5rem !important;
+}
+/*# sourceMappingURL=main.css.map */

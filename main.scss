@@ -1,0 +1,48 @@
+$color-primary : rgb(26,115,232);
+$color-secondary : rgb(219,234,254);
+$color-tertiary : rgba(63, 125, 224, 0.5);
+$color-dark : rgb(31,41,55);
+
+html {
+    font-family: 'regularp', 'Bangla648', 'sans-serif' !important;
+}
+
+body {
+    background: rgb(215,232,255);
+}
+// .header-container {
+//     // margin: 60px;
+//     padding: 60px;
+//     margin: 30px;
+// }
+.header-img {
+    max-height: 500px;
+}
+.header-logo span{
+vertical-align: middle;
+}
+.header-text {
+    background: $color-secondary;
+    padding: 1.3rem;
+    border-radius: 10px;
+}
+
+
+// Custom Css
+.fw-bold {
+    font-weight: 500!important;
+}
+
+.custom-btn {
+    background: $color-dark;
+    color: white;
+    border-radius: 10px;
+ }
+
+ .custom-btn:hover {
+    background: $color-tertiary;
+    color: $color-primary;
+ }
+.rounded {
+    border-radius: 1.5rem !important;
+}
