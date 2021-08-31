@@ -107,13 +107,6 @@ hr {
   color: #6c727c;
 }
 
-.dev-img {
-  width: 8rem;
-  height: 8rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .social-icons a {
   font-size: 1.5rem;
   -webkit-transition: 0.4s;
