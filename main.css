@@ -116,4 +116,14 @@ hr {
 .social-icons a:hover {
   color: #1a73e8 !important;
 }
+
+footer {
+  background: white;
+  border-radius: 0.8rem;
+}
+
+footer .link {
+  color: black;
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */
