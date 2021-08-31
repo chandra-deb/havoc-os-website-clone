@@ -38,4 +38,8 @@ body {
 .rounded {
   border-radius: 1.5rem !important;
 }
+
+.custom-font {
+  font-size: 2.8rem !important;
+}
 /*# sourceMappingURL=main.css.map */

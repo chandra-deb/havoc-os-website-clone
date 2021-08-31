@@ -9,15 +9,57 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="main.css">
     <title>Havoc OS</title>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 250px;
+            height: auto;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            border: 5px solid black;
+            box-shadow: inset 0px 0px 0px 20px #000000;
+            border-radius: 20px;
+            border: 8px solid black;
+            border-radius: 20px;
+            display: block;
+            height: auto;
+
+        }
+    </style>
+
 </head>
 
 <body>
 
     <section id="header">
         <div class="container-xxl">
-            <div class="mx-0 mx-md-5 my-5 py-5 bg-light rounded">
+            <div class="mx-0 mx-md-5 my-5 py-5 bg-light rounded shadow">
                 <div class="py-3">
 
                     <div class="row text-center text-md-start justify-content-around align-items-center">
@@ -70,13 +112,82 @@
             </div>
     </section>
 
+    <section id="screenshots">
+        <!-- Swiper -->
+        <div class="sc-head  text-center pt-5">
 
+            <h1 class="pt-5 custom-font">Screenshots</h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_10.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_9.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Screenshot_7.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            dragSize: 10,
+
+            initialSlide: 2,
+            autoHeight: true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 8,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
 
 </body>
 
