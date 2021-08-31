@@ -7,6 +7,45 @@ html {
     font-family: 'regularp', 'Bangla648', 'sans-serif' !important;
 }
 
+// Swipper Js
+
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+         
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 250px;
+            height: auto;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            border: 5px solid black;
+            box-shadow: inset 0px 0px 0px 20px #000000;
+            border-radius: 20px;
+            border: 8px solid black;
+            border-radius: 20px;
+            display: block;
+            height: auto;
+
+        }
+// Swipper Js end
+
 body {
     background: rgb(215,232,255);
 }
@@ -15,6 +54,12 @@ body {
 //     padding: 60px;
 //     margin: 30px;
 // }
+
+
+hr {
+    margin-bottom: 0px !important;
+    opacity: 0.2;
+}
 .header-img {
     max-height: 500px;
 }
@@ -44,13 +89,33 @@ vertical-align: middle;
     color: $color-primary;
  }
 .rounded {
-    border-radius: 1.5rem !important;
+    border-radius: 0.8rem !important;
+}
+
+.card-rounded {
+    border-radius: 0.5rem !important;
 }
 
 .custom-font {
     font-size: 2.8rem !important;
 }
 
-// .swiper-scrollbar {
-//     width: 200px !important;
-// }
+.custom-card .card-body {
+    padding:0rem 1.3rem 2rem
+}
+
+.custom-card img{
+background: white;
+    position: relative;
+    padding: 11px;
+    width: 60px;
+    border-radius: 50%;
+    top: -25px;
+    right: -15px;
+}
+
+.custom-lead {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(108, 114, 124);
+}
