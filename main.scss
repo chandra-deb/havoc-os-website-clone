@@ -119,3 +119,18 @@ background: white;
     font-weight: 500;
     color: rgb(108, 114, 124);
 }
+
+.dev-img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+.social-icons a:hover {
+    color: $color-primary !important;
+}
