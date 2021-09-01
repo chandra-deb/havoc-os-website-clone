@@ -1,5 +1,5 @@
 body::-webkit-scrollbar {
-  width: 0.4em;
+  width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -130,6 +130,20 @@ hr {
   color: #1a73e8 !important;
 }
 
+.link {
+  font-size: 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.link:hover {
+  color: black;
+  background: rgba(63, 125, 224, 0.5);
+}
+
 footer {
   background: white;
   border-radius: 0.8rem;
@@ -138,5 +152,29 @@ footer {
 footer .link {
   color: black;
   text-decoration: none;
+}
+
+#ham-burger {
+  position: relative;
+}
+
+@media screen and (max-width: 880px) {
+  #menu-bg {
+    display: none !important;
+  }
+  #ham-burger {
+    display: inline-block !important;
+    position: relative;
+    top: 2px;
+  }
+}
+
+@media screen and (min-width: 881px) {
+  #menu-bg {
+    display: block  !important;
+  }
+  #ham-burger {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
