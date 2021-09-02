@@ -158,6 +158,40 @@ footer .link {
   position: relative;
 }
 
+.m-nav {
+  visibility: hidden;
+  z-index: 1021;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.m-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.m-link:hover {
+  color: white;
+}
+
+#bottom-side {
+  height: 100vh;
+  background: #cce0ff;
+}
+
+.x-btn {
+  border-radius: 5%;
+  color: #f47f7f;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 880px) {
   #menu-bg {
     display: none !important;

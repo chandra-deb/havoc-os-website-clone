@@ -180,6 +180,41 @@ position: relative;
 // top: 4px;
 }
 
+.m-nav{
+    visibility: hidden;
+    z-index: 1021;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.m-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    // background: $primary-color;
+}
+.m-link:hover {
+    color: white;
+}
+
+
+#bottom-side {
+    height: 100vh;
+    background:rgb(204,224,255);
+}
+
+.x-btn {
+// background-color:    rgb(253,219,219);
+border-radius: 5%;
+color: rgb(244,127,127);
+font-size: 2rem;
+}
+
 // Media Queries
 @media screen and (max-width: 880px) {
     #menu-bg {

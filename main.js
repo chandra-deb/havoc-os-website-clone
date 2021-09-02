@@ -1,21 +1,32 @@
-const log = console.log;
-let a = document.querySelectorAll('.link');
-a.forEach(function (item, index) {
-    console.log(item);
+let xBtn = document.querySelector('.x-btn');
+let targetTag = document.querySelector('.m-nav');
+xBtn.addEventListener('click', function () {
+    targetTag.style.opacity = '0';
+    targetTag.style.visibility = 'hidden';
 });
 
-// window.outerWidth < 880 ? document.querySelector('#menu-bg').style.display = 'none' : document.querySelector('#menu-bg').style.display = 'initial';
+let mLink = document.querySelectorAll('.m-link');
+mLink.forEach(function (item) {
+    item.addEventListener('click', function () {
+        targetTag.style.opacity = '0';
+        targetTag.style.visibility = 'hidden';
+    });
+});
 
-// onresize = function () {
-//     log(window.innerWidth);
-//     let targetTag = document.querySelector('#menu-bg');
-//     let mobileNav = document.querySelector('#mob-nav');
+let hamBtn = document.querySelector('#ham-burger');
+hamBtn.addEventListener('click', function () {
+    // targetTag.classList.toggle('d-none');
+    targetTag.style.opacity = '1';
+    targetTag.style.visibility = 'visible';
+});
 
-//     if (window.innerWidth >= 880) {
-//         targetTag.style.display = 'initial';
-//     }
-//     else if (window.innerWidth < 880) {
-//         targetTag.style.display = 'none';
-//         console.log(mobileNav);
-//     }
-// }
+let time = document.querySelector('#time');
+let day = document.querySelector('#day');
+time.innerHTML = new Date().toTimeString().slice(0, 5);
+let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+day.innerHTML = weekday[new Date().getUTCDay()];
+
+
+
+
+
