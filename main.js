@@ -27,6 +27,15 @@ let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 day.innerHTML = weekday[new Date().getUTCDay()];
 
 
+// Preloader
+
+let loader = document.querySelector('#loader');
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        loader.style.opacity = 0;
+        loader.style.visibility = 'hidden';
+    }, 500);
+});
 
 
 
