@@ -3,6 +3,11 @@ $color-secondary: rgb(219, 234, 254);
 $color-tertiary: rgba(63, 125, 224, 0.5);
 $color-dark: rgb(31, 41, 55);
 
+#main-container {
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+
 body::-webkit-scrollbar {
   width: 0.4rem;
 }

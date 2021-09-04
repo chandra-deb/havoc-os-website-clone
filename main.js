@@ -30,10 +30,12 @@ day.innerHTML = weekday[new Date().getUTCDay()];
 // Preloader
 
 let loader = document.querySelector('#loader');
+let mainContainer = document.querySelector("#main-container");
 window.addEventListener('load', function () {
     setTimeout(function () {
         loader.style.opacity = 0;
         loader.style.visibility = 'hidden';
+        mainContainer.style.opacity = '1';
     }, 500);
 });
 
