@@ -202,7 +202,7 @@ footer .link {
   transition: 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 885px) {
   #menu-bg {
     display: none !important;
   }
@@ -213,9 +213,9 @@ footer .link {
   }
 }
 
-@media screen and (min-width: 881px) {
+@media screen and (min-width: 886px) {
   #menu-bg {
-    display: block  !important;
+    display: block !important;
   }
   #ham-burger {
     display: none !important;
