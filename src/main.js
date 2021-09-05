@@ -50,7 +50,7 @@ window.addEventListener('load', function () {
             centeredSlides: true,
             slidesPerView: "auto",
             dragSize: 10,
-            autoplay: true,
+            // autoplay: true,
             initialSlide: 5,
             autoHeight: true,
             coverflowEffect: {
