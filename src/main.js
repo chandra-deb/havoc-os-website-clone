@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
             slidesPerView: "auto",
             dragSize: 10,
             // autoplay: true,
-            initialSlide: 5,
+            initialSlide: 4,
             autoHeight: true,
             coverflowEffect: {
                 rotate: 0,
