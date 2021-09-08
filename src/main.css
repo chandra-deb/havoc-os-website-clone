@@ -32,7 +32,7 @@ body {
 }
 
 .swiper {
-  width: 100%;
+  max-width: 500px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
